@@ -8,6 +8,9 @@ app = Flask(__name__, static_folder='static')
 
 # Configure Gemini API
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+# add gemini api to your environment variable
+# using below
+#export GEMINI_API_KEY="YOUR_KEY_HERE"
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-pro-exp-03-25')  # Adjust as needed
 
