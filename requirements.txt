@@ -1,0 +1,6 @@
+Flask
+gTTS
+google-generativeai
+speechrecognition
+
+
